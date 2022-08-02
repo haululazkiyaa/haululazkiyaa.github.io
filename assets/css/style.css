@@ -1,0 +1,334 @@
+/* google fonts quicksand stylesheet import */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoCjC3jsGyN.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoCxCvjsGyN.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* color variabel */
+:root {
+    --bk: #302b27;
+    --wt: #f5f3f5;
+    --bg: #f8f9fa;
+    --st: #576ca8;
+    --nd: #274690;
+    --rd: #1b264f;
+}
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* general */
+html {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--bg);
+    color: var(--bk);
+}
+.container {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 768px;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+.half-width {
+    width: 45%;
+    box-sizing: border-box;
+}
+/* header */
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    background: var(--st);
+    box-shadow: 0 1px 2px var(--st);
+    z-index: 99;
+}
+header ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 5px;
+    padding: 15px 0;
+    border-radius: 5px;
+}
+header ul li:hover {
+    background-color: var(--nd);
+}
+header ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--wt);
+    padding: 15px 25px;
+}
+.logo {
+    position: relative;
+    top: -10px;
+}
+/* top section */
+#top {
+    height: 100vh;
+}
+#top .container {
+    padding: 175px 0;
+}
+.greeting {
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+.my-name {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--nd);
+    padding-top: 15px;
+}
+.my-title {
+    font-size: 1.5rem;
+    font-weight:400;
+    line-height: 2rem;
+    padding-top: 15px;
+}
+.profile-photo {
+    text-align: right;
+}
+.profile-photo img {
+    width: 75%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--st);
+}
+.call-to-action {
+    padding-top: 25px;
+}
+.btn {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.btn:hover {
+    opacity: 0.8;
+    top: 5px;
+    box-shadow: none;
+}
+.btn-primary {
+    margin-right: 15px;
+    background-color: var(--st);
+    color: var(--wt);
+    box-shadow: 0 5px 0 var(--nd);
+}
+.btn-secondary {
+    color: var(--nd);
+}
+/* general section */
+.header-section {
+    margin: 70px 0 25px 0;
+    text-align: center;
+}
+.header-section h2 {
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    border-bottom: 5px solid var(--st);
+    border-radius: 5px;
+}
+.list-item h3 {
+    color: var(--nd);
+    margin: 20px 0 15px 0;
+}
+.list-item h3:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f192";
+    padding-right: 10px;
+}
+.detail-item {
+    margin-bottom: 15px;
+}
+.detail-item img {
+    height: 150px;
+}
+.detail-item img, .detail-item h4, .detail-item h5, .detail-item p {
+    margin-left: 30px;
+}
+.detail-item h4 {
+    font-size: 1.25rem;
+    padding-top: 5px;
+}
+.detail-item h5 {
+    font-size: 1rem;
+    padding-top: 5px;
+}
+.detail-item p {
+    font-size: 1rem;
+    padding-top: 5px;
+}
+.detail-item ul li {
+    margin-left: 50px;
+}
+/* portfolio section */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-detail {
+    width: 350px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(200, 200, 200, 0.5);
+    cursor: pointer;
+}
+.project-detail:hover {
+    box-shadow: 0 3px 5px rgb(200, 200, 200);
+}
+.project-detail img {
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+}
+.project-detail h4, .project-detail p {
+    margin-top: 10px;
+}
+/* contact section */
+.contact-box {
+    padding: 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(200, 200, 200, 0.5);
+}
+.contact-box input, .contact-box label {
+    margin-bottom: 10px;
+}
+.contact-box input, .contact-box textarea,  .contact-box label {
+    display: block;
+    width: 95%;
+}
+.contact-box label {
+    font-weight: 600;
+    font-size: 1rem;
+}
+.contact-box input, .contact-box textarea {
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    border: 2px solid var(--nd);
+    border-radius: 5px;
+}
+.btn-submit {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    opacity: 0.8;
+    top: 5px;
+    box-shadow: none;
+}
+/* footer */
+footer .container {
+    margin-top: 70px;
+    border-top: 1px solid rgb(200, 200, 200);
+}
+/* back to top */
+.back-to-top {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: none;
+}
+.back-to-top:hover {
+    opacity: 0.8;
+    bottom: 20px;
+    box-shadow: none;
+}
+/* dots */
+.dots1 {
+    position: absolute;
+    top: 200px;
+    left: -150px;
+    width: 250px;
+    z-index: -1;
+}
+.dots2 {
+    position: absolute;
+    bottom: 100px;
+    right: -100px;
+    width: 300px;
+    z-index: -1;
+}
+.dots3 {
+    position: absolute;
+    bottom: -50px;
+    left: 75px;
+    width: 300px;
+    z-index: -1;
+}
+.dots4 {
+    position: relative;
+    bottom: 50px;
+    left: -140px;
+    width: 400px;
+    z-index: -1;
+    transform: rotate(90deg)
+}
+.dots5 {
+    position: relative;
+    bottom: 50px;
+    right: 0;
+    width: 400px;
+    z-index: -1;
+    transform: rotate(90deg);
+    display: inline;
+}
